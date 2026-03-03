@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden; 
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    background-color: ghostwhite;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px 2%;
+}
+.loqo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    padding: 0;
+    white-space: nowrap;
+}
+.search{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 20px;       
+    border-radius: 25px;      
+    border: 1px solid gray;                            
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-box i {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+}
+nav{
+    display: flex;
+    padding-right: 0;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+.active{
+    border-bottom: 2px solid pink;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    gap: 15px;
+    flex-shrink: 0;
+}
+.Detail{
+    display: flex;
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+}
+.photo{
+    margin: 20px;
+    align-items: center;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    background-color: white;
+}
+.information {
+    padding: 20px;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.information h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.information h3:last-of-type {
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.information p {
+    color: rgb(210, 210, 43);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+button{
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #e04d94;
+    transform: scale(1.05);
+}
+.Feature{
+    margin: 20px;
+}
+.foot{
+    background-color: #ff69b4;
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.follow i {
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    .Detail {
+        display: flex;
+        flex-wrap: wrap; }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; 
+        gap: 10px;
+    }
+    nav {
+        gap: 8px;
+    }
+    nav a {
+        font-size: 13px; 
+    }
+    .loqo {
+        font-size: 16px; 
+    }
+}
